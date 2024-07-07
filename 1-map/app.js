@@ -8,3 +8,4 @@ const array = [
 const nameSet = new Set(array.map((el) => array.find((item) => el.id === item.id)));
 console.log(array);
 console.log(nameSet);
+console.log([...nameSet])
