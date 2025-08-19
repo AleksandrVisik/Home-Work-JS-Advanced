@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    padding: 24px 24px;
+    background-color: #0e0e13;
+    color: #fafafa;
+
+    ::selection {
+        background: #5b28b9;
+        border-radius: 15px;
+        padding: 25px;
+    }
+}
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px;
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    border: 1px solid #333;
+    min-height: 100px;
+}
+.title {
+    border: 1px solid #333;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 140%;
+}
+.wrapper {
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.wrapper__buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.wrapper__content {
+    width: 100%;
+    padding: 12px;
+    color: #fafafa;
+    border-radius: 5px;
+    min-height: 100%;
+    border: 1px solid #333;
+}
+
+.button {
+    background: transparent;
+    color: #fafafa;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    cursor: pointer;
+    &:active {
+        background: #333;
+    }
+}
+.button__reset {
+    color: red;
+}
+.wrapper__count {
+    color: red;
+    font-size: 22px;
+}
+.-focus- {
+    background: #444;
+}
+.-active- {
+    color: yellow;
+}
+
+p {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
